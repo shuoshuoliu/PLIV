@@ -150,7 +150,7 @@ GradFit = function(x, y, z, c_len, t_len) {
   #initial=c(alpha,beta,theta0$c_final,theta0$t_final,rho,sig2)
   
   lenlen=(c_len+t_len+4)
-  bound=2
+  bound=5
   lmax <- nlminb(theta0, Lglik, Gradient,
                  x=x, y=y, z=z, c_len=c_len, t_len=t_len,
                  lower=c(rep(-bound,c_len+2),rep(-bound,t_len+2),rep(min(z),c_len),
