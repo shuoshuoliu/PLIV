@@ -1,6 +1,5 @@
 rm(list=ls())
-# needs sample size 2000 to have good coverage
-# if sample small, then consider tight bound
+
 source("main.R")
 set.seed(200)
 #generate true data#

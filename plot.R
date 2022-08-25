@@ -5,7 +5,7 @@ library(ggplot2)
 source("main.R")
 set.seed(200)
 #generate true data#
-n=3000
+n=500
 alpha=c(-1,0.5,1)
 beta=c(-0.2,1,0.5)
 c=0.5
@@ -33,7 +33,7 @@ p2=ggplot(data, aes(x=x, y=y,color=lx)) + geom_point()+
 ###########
 set.seed(200)
 #generate true data#
-n=3000
+n=500
 alpha=c(-1,0.5,1,1)
 beta=c(-1,1.2,1,0.5)
 c=c(-1,1)
